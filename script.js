@@ -3,15 +3,7 @@ const gsize = document.querySelector('#gsize');
 const reset = document.querySelector('#reset');
 
 //Default grid size
-for (var i = 0; i < 12; i++) {
-    for (var j = 0; j < 12; j++) {
-        const dv = document.createElement('div');
-        dv.setAttribute('class', 'box');
-        container.appendChild(dv);
-    }
-    
-    toggleBox();
-}
+newGrid(12);
 
 //Change grid size
 function newGrid(s) {
